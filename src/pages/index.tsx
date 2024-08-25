@@ -16,7 +16,7 @@ function MainCard() {
         <div className="flex gap-4 justify-evenly px-10 py-4">
           <div className="py-8">
             <Badge content={ <ThemeSwitch /> } shape="circle" showOutline={false} size="lg">
-              <Avatar className="col-span-2 w-32 h-32" src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
+              <Avatar className="col-span-2 w-32 h-32" src="./src/files/perfil.jpg" />
             </Badge>
           </div>
           <div className="pl-2 py-4 text-left">
