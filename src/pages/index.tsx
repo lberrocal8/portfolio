@@ -16,7 +16,7 @@ function MainCard() {
         <div className="flex gap-4 justify-evenly px-10 py-4">
           <div className="py-8">
             <Badge content={ <ThemeSwitch /> } shape="circle" showOutline={false} size="lg">
-              <Avatar className="col-span-2 w-32 h-32" src="./src/files/perfil.jpg" />
+              <Avatar className="col-span-2 w-32 h-32" src="../src/files/perfil.jpg" />
             </Badge>
           </div>
           <div className="pl-2 py-4 text-left">
@@ -47,6 +47,12 @@ function MainCard() {
           <Tabs aria-label="Options" className="justify-center">
             <Tab key="frontend" title="Frontend">
               <div className="flex gap-4">
+                <Card className="border-none" isFooterBlurred isPressable onClick={() => window.open('https://github.com/lberrocal8/expense-tracker-app', '_blank')} radius="lg">
+                  <Image alt="expense project" className="object-cover" height={200} src="./src/files/finance.png" width={200}/>
+                  <CardFooter className="justify-center before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+                    <p className="text-tiny text-white/80 py-2">Expense Tracker App</p>
+                  </CardFooter>
+                </Card>
                 <Card className="border-none" isFooterBlurred isPressable onClick={() => window.open('https://github.com/lberrocal8/portfolio', '_blank')} radius="lg">
                   <Image alt="portfolio image" className="object-cover" height={200} src="./src/files/code.jpg" width={200}/>
                   <CardFooter className="justify-center before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
